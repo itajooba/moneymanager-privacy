@@ -30,9 +30,9 @@ only sections that apply are *Local storage* and *Permissions the app requests*.
 
 We collect only what the app needs to function. We do **not** collect your
 location, contacts, photos, browsing activity, microphone, camera, or
-biometrics. The app contains **no third-party analytics, attribution, or
-advertising SDKs**, and we do not collect or use the Android **Advertising ID
-(AAID)** or any equivalent advertising identifier. We do not engage in
+biometrics. The app contains **no behavioural-analytics, attribution, or
+advertising SDKs**, and we do not collect or use the Android **Advertising
+ID (AAID)** or any equivalent advertising identifier. We do not engage in
 cross-app or cross-site behavioural tracking.
 
 **Account information** (only if you sign up)
@@ -60,6 +60,16 @@ cross-app or cross-site behavioural tracking.
 **Subscription status**
 
 - Whether your account is on the free or paid plan.
+
+**Crash diagnostics**
+
+- If the app crashes, Firebase Crashlytics (operated by Google) records a
+  diagnostic report so we can identify and fix the bug. This includes a
+  crash stack trace, the device model, the operating-system version, the
+  app version, the crash timestamp, and a randomly generated installation
+  identifier. It does **not** include your email, name, financial records,
+  or any other content you have entered. We use this data solely to improve
+  the app's stability.
 
 ## 3. How we use your data, and the legal bases we rely on
 
@@ -107,8 +117,8 @@ the transaction. See <https://policies.google.com/privacy>.
 We do not sell or rent your personal data. We share data only with the
 service providers required to run the app:
 
-- **Google (Firebase / Google Cloud)** — authentication, cloud database, and
-  app-instance identification.
+- **Google (Firebase / Google Cloud)** — authentication, cloud database,
+  app-instance identification, and crash diagnostics (Firebase Crashlytics).
 - **Google Play** — subscription billing.
 
 We may disclose data if required by law, or to protect the rights, safety, or
